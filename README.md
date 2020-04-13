@@ -16,7 +16,7 @@ Cara penggunaan:
    ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
    
 3. Install Android Apps ke handphone ANDROID anda. File apk ada di folder "android-app". 
-   Setelah install aplikasi, buka app. Disitu ada IP Server/Localhost. Masukan IP Localhost ke situ. Kalau bingung berapa IP local anda, coba jalankan netsat di cmd. Syarat utamanya biar bisa jalan: Handphone & Komputer harus berada dalam 1 jaringan yang sama.
+   Setelah install aplikasi, buka app. Disitu ada IP Server/Localhost. Masukan IP Localhost ke situ. Kalau bingung berapa IP local anda, coba jalankan netsat di cmd. <b>Syarat utamanya biar bisa jalan: Handphone & Komputer harus berada dalam 1 jaringan yang sama</b>.
    Untuk durasi pengecekan & pengiriman SMS, default nya adalah 1. Yang artinya 1 menit. Silahkan rubah sesuai kebutuhan.
    Setiap 1 menit, aplikasi akan mengecek record dengan status 0, dan mengirimkannya kepada nomer tujuan, melalui handphone anda. Nanti akan muncul notifikasi di handphone anda, bahwa sms sudah terkirim.
    
