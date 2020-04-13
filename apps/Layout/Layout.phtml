@@ -1,0 +1,28 @@
+<?php
+    $viewTitle = isset($this->viewTitle) ? $this->viewTitle : "";
+    $viewDescription = isset($this->viewDescription) ? $this->viewDescription : "";
+    $viewImage = isset($this->viewImage) ? $this->viewImage : "";
+    $viewKeywords = isset($this->viewKeywords) ? $this->viewKeywords : "";
+    $baseUrl = \NG\Uri::baseUrl();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="image" content="<?php echo $viewImage; ?>">
+    <meta name="keywords" content="<?php echo $viewKeywords; ?>" />
+    <meta name="description" content="<?php echo $viewDescription ?>" />
+    <title><?php echo $viewTitle ?></title>
+    
+    <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl ?>asset/css/style.css" />
+</head>
+<body>
+    <?php 
+        /* rendering View */
+        $this->render(); 
+    ?>
+    <script type="text/javascript" src="<?php echo $baseUrl ?>asset/js/script.js"></script>
+</body>
+</html>

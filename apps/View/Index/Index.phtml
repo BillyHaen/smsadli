@@ -1,0 +1,20 @@
+<?php 
+    $session = $this->session;
+    $cookie = $this->cookie;
+    $cache = $this->cache;
+?>
+
+<h1>API SMS Gateway Lokal</h1>
+
+<p>
+    <h3>Digunakan untuk test fungsi kirim SMS di aplikasi, dengan menggunakan handphone sebagai SMS Gateway</h3>
+
+    <h4>1. Kirim SMS</h4>
+    <b>Endpoint : http://localhost/smsadli/api/sms/insert/[Nomer Tujuan]/[Isi Pesan]</b><br/><br/>
+    <span><i>contoh: http://localhost/smsadli/api/sms/insert/081288825701/Test Kirim SMS</i></span><br/><br/>
+
+
+    Tambahkan satu atau dua lagi baris data ke dalam tabel outbox dengan cara seperti di atas. Sekarang coba jalankan tautan ini pada peramban.
+
+    http://localhost/smsadli/api/sms/read
+</p>
